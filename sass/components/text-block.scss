@@ -1,0 +1,16 @@
+.text-block-column {
+    @extend %flex-column;
+
+    &--justify-center {
+        justify-content: center;
+    }
+
+    &--align-center {
+        align-items: center;
+    }
+}
+
+.text-block-row {
+    @extend %flex-row;
+    justify-content: space-between;
+}

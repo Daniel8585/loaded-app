@@ -1,0 +1,14 @@
+.navbar-container {
+    @extend %flex-column;
+    align-items: flex-end;
+    padding: 0 26px;
+    @media screen {
+        
+    }
+
+    @media only screen and (max-width: 992px) {
+        & {
+            display: none;
+        }   
+    }
+}

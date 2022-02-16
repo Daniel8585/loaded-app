@@ -1,0 +1,28 @@
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(4,  minmax(325px, 1fr));
+    gap: 10px;
+    margin: 0 auto;
+    margin-bottom: 30px; //must will change
+    padding: 0;
+    width: 100%;
+    max-width: 1440px;
+    
+    &__item {
+        justify-self: center;
+    }
+
+    /* Large devices (laptops/desktops, 992px and up) */
+    @media only screen and (max-width: 1439px) {
+        & {
+            grid-template-columns: repeat(2, minmax(325px, 1fr));
+            gap: 30px;
+        }
+    }
+
+    @media only screen and (max-width: 720px) {
+        & {
+            grid-template-columns: repeat(1, minmax(325px, 1fr));
+        }   
+    }
+}

@@ -1,0 +1,34 @@
+.u-txt-right {
+    text-align: right !important;
+}
+
+.u-txt-left {
+    text-align: left !important;
+}
+
+$increments: (14, 16, 20, 25, 29, 36, 37, 38);
+$width-incerements: (275);
+$directions: (top, bottom, left, right);
+
+// Loop through the increments and directions.
+@each $increment in $increments {
+  @each $direction in $directions {
+    .u-m#{str-slice($direction, 0, 1)}-#{$increment} {
+      margin-#{$direction}: #{$increment}px !important;
+    }
+
+    .u-p#{str-slice($direction, 0, 1)}-#{$increment} {
+      padding-#{$direction}: #{$increment}px !important;
+    }
+  }
+}
+
+// @each $width in $width-incerements {
+//     .u-width-#{$width} {
+//         width: #{$width}px !important;
+//     }
+// }
+
+.u-txt-capitalize {
+  text-transform: capitalize !important;
+}

@@ -1,0 +1,17 @@
+.input-group {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &__input {
+        height: 28px;
+        border: none;
+        outline: 2px transparent;
+        padding: 8px;
+    }
+
+    &__button {
+        box-shadow: none;
+        border-radius: 0 2px 2px 0;
+    }
+}

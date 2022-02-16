@@ -1,0 +1,63 @@
+.ticket-modal-container {
+  position: relative;
+}
+.ticket-modal{
+    position: absolute;
+    z-index: 10;
+    top: 0;
+    right: 50%;
+    height: 610px;
+    min-width: 1015px;
+    transform: translateX(50%);
+    background: #fff;
+    width: 500px;
+
+
+    &__content {
+        position: relative;
+        margin: 30px;
+        display: grid;
+        grid-template-columns: 46% 50%;
+        gap: 24px;
+        height: calc(100% - 60px);
+
+        &__list-container{
+           
+           .list-items{
+               display: flex;
+               flex-direction: column;
+               margin-bottom: 50px;
+
+              p{
+                   color:rgba(0, 0, 0, 0.26);
+                   font-size: 18px;
+                   line-height:21px ;
+
+                   span{
+                       color:black;
+                   }
+               }
+           }
+           .btn{
+               border: none;
+               outline: none;
+           }
+        }
+    }
+
+
+    &__img{
+        width: 437px;
+        height: 547px;
+       object-fit: cover;
+    }
+
+    
+}
+
+
+
+    //    display: flex;
+    //    flex-direction: column;
+    //    flex-wrap: wrap;
+    //    align-items: flex-end;

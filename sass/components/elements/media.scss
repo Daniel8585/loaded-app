@@ -1,0 +1,32 @@
+.media {
+    display: block;
+    width: 100%;
+    font: 0/0 a;
+
+    &--navbar {
+        width: 350px;
+
+        &:hover {
+            cursor: pointer;
+        }
+    }
+
+    &--shows {
+        width: 319px;
+        height: 314px;
+    }
+
+    &--navigation {
+        height: 45px;
+        width: 362px;
+        margin-top: 40px;
+    }
+
+    &--cover {
+        object-fit: cover;
+    }
+
+    &--inset-border {
+        border: 2px solid transparent;
+    }
+}
